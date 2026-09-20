@@ -54,7 +54,8 @@ export interface LayoutConfig {
   mosque_name_position: string; // left | center | right
   prayer_time_position: string; // left | right | bottom
   background_position: string;
-  running_text_speed: number;
+  running_text_speed: number; // seconds per loop
+  running_text_size: number; // percent scale of the running text bar
 }
 
 export interface Layout {

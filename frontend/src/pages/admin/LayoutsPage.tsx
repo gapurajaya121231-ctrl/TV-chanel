@@ -266,6 +266,9 @@ export default function LayoutsPage() {
               <Field label={`Running Text Speed (${draft.running_text_speed} detik/putaran)`}>
                 <input type="range" min={10} max={90} step={5} data-testid="layout-config-running_text_speed" value={draft.running_text_speed} onChange={(e) => setDraft({ ...draft, running_text_speed: Number(e.target.value) })} className="mt-3 w-full accent-[#F59E0B]" />
               </Field>
+              <Field label={`Running Text Size (${draft.running_text_size}%)`}>
+                <input type="range" min={60} max={200} step={10} data-testid="layout-config-running_text_size" value={draft.running_text_size} onChange={(e) => setDraft({ ...draft, running_text_size: Number(e.target.value) })} className="mt-3 w-full accent-[#F59E0B]" />
+              </Field>
             </div>
           </div>
         </div>

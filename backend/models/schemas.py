@@ -73,6 +73,7 @@ class LayoutConfig(BaseModel):
     prayer_time_position: str = "left"  # left | right | bottom
     background_position: str = "center"  # CSS object-position
     running_text_speed: int = 40  # seconds per loop
+    running_text_size: int = 100  # percent scale of the running text bar
 
 
 class Layout(BaseModel):

@@ -9,7 +9,7 @@ tanpa login; halaman TV kiosk 16:9 tanpa scroll dengan Wake Lock (layar tetap me
 ## URL
 - `/` — landing (Buka Display TV / Panel Admin)
 - `/display` — halaman TV kiosk 16:9 (1920x1080), no-scroll, wake lock, fallback jam saat backend mati
-- `/admin` — dashboard + 16 menu sidebar: masjid-profile, prayer-time, layouts,
+- `/admin` — dashboard (kartu statistik bisa diketuk → dialog isinya; preview TV bisa diklik → buka /display) + 16 menu sidebar: masjid-profile, prayer-time, layouts,
   localization, main-slider, info-slide, donation-slide, islamic-event, running-text,
   azan-screen, iqamah-screen, scheduled-murattal, masjid-web, display-preview, settings
 - `/admin/layouts` — katalog template (card 16:9 live preview, tombol Preview /
@@ -24,7 +24,7 @@ tanpa login; halaman TV kiosk 16:9 tanpa scroll dengan Wake Lock (layar tetap me
   vertical, digital_clock, prayer_focus) + kustom; tepat satu `is_active`;
   config: primary/secondary/accent/text/bg colors, panel_opacity, font_size,
   clock_size, logo_position, mosque_name_position, prayer_time_position,
-  background_position, running_text_speed
+  background_position, running_text_speed, running_text_size (persen skala teks)
 - `slider_images`: url, title, is_utama, order
 - `info_slides`: slide_type (pengumuman|kajian|info|masjid), title, body, image_url, is_active, order
 - `donation` (singleton): title, text, qr_url, bank_name, account_number, account_name, is_active

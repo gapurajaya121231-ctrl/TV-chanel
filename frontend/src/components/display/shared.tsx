@@ -284,19 +284,21 @@ export function RunningTextBar({ data, cfg }: { data: DisplayData; cfg: LayoutCo
   if (!data.settings.show_running_text || active.length === 0) return null;
   const content = active.map((t) => t.text).join("      \u2022      ");
   const speed = Math.round(active.reduce((sum, t) => sum + Math.max(10, t.speed), 0) / active.length);
+  const sizeScale = Math.max(0.6, Math.min(2, cfg.running_text_size / 100)); // 60%–200%
+  const fontSize = `calc(${(1.5 * sizeScale).toFixed(2)}rem * var(--fs))`;
   return (
     <div className="flex shrink-0 items-stretch overflow-hidden" style={{ backgroundColor: hexToRgba(cfg.secondary_color, 0.96) }} data-testid="tv-running-text">
       <span
-        className="flex shrink-0 items-center px-8 text-[calc(1.5rem*var(--fs))] font-extrabold uppercase tracking-widest"
-        style={{ backgroundColor: cfg.accent_color, color: cfg.secondary_color }}
+        className="flex shrink-0 items-center px-8 font-extrabold uppercase tracking-widest"
+        style={{ backgroundColor: cfg.accent_color, color: cfg.secondary_color, fontSize }}
         data-testid="tv-running-text-label"
       >
         Info
       </span>
       <div className="relative flex flex-1 items-center overflow-hidden">
         <div className="animate-marquee flex w-max whitespace-nowrap" style={{ animationDuration: `${speed}s` }}>
-          <span className="px-10 text-[calc(1.5rem*var(--fs))] font-medium" data-testid="tv-running-text-content">{content}</span>
-          <span className="px-10 text-[calc(1.5rem*var(--fs))] font-medium">{content}</span>
+          <span className="px-10 font-medium" style={{ fontSize }} data-testid="tv-running-text-content">{content}</span>
+          <span className="px-10 font-medium" style={{ fontSize }}>{content}</span>
         </div>
       </div>
     </div>

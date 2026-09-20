@@ -1,0 +1,257 @@
+{
+  "theme": "hybrid_dual_personality",
+  "archetype": "ISLAMIC_ROYAL_BLUE_AND_GOLD",
+  "colors": {
+    "surfaces": [
+      {
+        "name": "admin_page",
+        "kind": "solid",
+        "bg": "#0B132B",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "link": "#38BDF8",
+          "error": "#F87171",
+          "success": "#34D399",
+          "gold": "#F59E0B"
+        }
+      },
+      {
+        "name": "admin_sidebar",
+        "kind": "solid",
+        "bg": "#070D1E",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#64748B",
+        "roles": {
+          "active_bg": "#1E293B",
+          "active_accent": "#F59E0B",
+          "border": "#1E293B"
+        }
+      },
+      {
+        "name": "admin_card",
+        "kind": "solid",
+        "bg": "#111C38",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "border": "#1E2F5D",
+          "highlight": "#F59E0B"
+        }
+      },
+      {
+        "name": "admin_card_active_template",
+        "kind": "solid",
+        "bg": "#0F2847",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#CBD5E1",
+        "roles": {
+          "badge_bg": "#F59E0B",
+          "badge_text": "#070D1E",
+          "border": "#F59E0B"
+        }
+      },
+      {
+        "name": "display_signature_bg",
+        "kind": "solid",
+        "bg": "#061325",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#E2E8F0",
+        "roles": {
+          "gold_primary": "#F6BE3C",
+          "gold_glow": "#D97706",
+          "islamic_emerald": "#10B981",
+          "accent_red": "#EF4444"
+        }
+      },
+      {
+        "name": "display_schedule_card",
+        "kind": "solid",
+        "bg": "#0B1D3A",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#CBD5E1",
+        "roles": {
+          "active_card_bg": "#B45309",
+          "active_card_text": "#FFFBEB",
+          "gold_border": "#F59E0B"
+        }
+      },
+      {
+        "name": "display_cinematic_overlay",
+        "kind": "image",
+        "contrast_against": "#0A1128",
+        "guarantee": "scrim: linear-gradient(180deg, rgba(6,19,37,0.85) 0%, rgba(6,19,37,0.65) 50%, rgba(6,19,37,0.92) 100%)",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#E2E8F0",
+        "roles": {
+          "clock": "#FCD34D",
+          "badge": "#10B981"
+        }
+      },
+      {
+        "name": "display_azan_iqamah_modal",
+        "kind": "solid",
+        "bg": "#050C1A",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#FDE68A",
+        "roles": {
+          "gold_header": "#FBBF24",
+          "counter_glow": "#EF4444"
+        }
+      }
+    ],
+    "accent": "#F59E0B",
+    "on_accent": "#070D1E",
+    "primary_royal_blue": "#0284C7",
+    "deep_islamic_blue": "#0A1931",
+    "gold_amber": "#F59E0B",
+    "emerald_accent": "#10B981"
+  },
+  "typography": {
+    "font_heading": "'Plus Jakarta Sans Variable', sans-serif",
+    "font_body": "'Plus Jakarta Sans Variable', sans-serif",
+    "font_mono": "'JetBrains Mono Variable', monospace",
+    "font_display_clock": "'JetBrains Mono Variable', monospace",
+    "scale_px": {
+      "display": 60,
+      "h1": 48,
+      "h2": 36,
+      "h3": 24,
+      "body": 16,
+      "caption": 14
+    },
+    "tv_scale_px": {
+      "giant_clock": "text-7xl lg:text-9xl",
+      "main_countdown": "text-5xl lg:text-7xl",
+      "prayer_time_large": "text-4xl lg:text-6xl",
+      "mosque_title": "text-3xl lg:text-5xl",
+      "running_text": "text-2xl lg:text-3xl"
+    }
+  },
+  "entry_surfaces": {
+    "/": "split dashboard — dark navy sidebar with 16 Indonesian mosque menu links left, live TV preview & quick stats right",
+    "/admin": "split dashboard — dark navy sidebar with 16 Indonesian mosque menu links left, live TV preview & quick stats right",
+    "/admin/layouts": "template store catalog — 16:9 preview cards for 8 modular TV templates, active gold badge, live modal preview & per-layout customizer",
+    "/display": "fullscreen 16:9 1080p kiosk — Islamic royal blue + gold accents, prayer schedule, real-time seconds clock, photo slide, running marquee, wake lock always-on"
+  },
+  "templates_catalog": [
+    {
+      "id": "SIGNATURE",
+      "name": "Signature Islamic Blue & Gold",
+      "description": "Desain biru Islami premium dengan lis emas, jadwal salat di kiri, jam digital di tengah, foto masjid di kanan, dan running text di bawah.",
+      "tag": "Rekomendasi Utama",
+      "preview_theme": "Royal Navy + Amber Gold"
+    },
+    {
+      "id": "ULTRA_WIDE",
+      "name": "Ultra Wide Landscape",
+      "description": "Foto masjid dominan penuh dengan jadwal salat horizontal membentang di bagian bawah layar secara elegan.",
+      "tag": "Foto Dominan",
+      "preview_theme": "Full Photo + Bottom Grid"
+    },
+    {
+      "id": "SIMPLICITY",
+      "name": "Simplicity Minimalist",
+      "description": "Tampilan bersih & minimalis, fokus pada keterbacaan jam digital besar dan waktu salat dengan kartu kontras tinggi.",
+      "tag": "Minimalis Modern",
+      "preview_theme": "High Contrast Clean"
+    },
+    {
+      "id": "CINEMATIC",
+      "name": "Cinematic Ambience",
+      "description": "Slide foto penuh sebagai latar belakang dengan panel transparan bergradasi halus dan tipografi mewah.",
+      "tag": "Elegan Glass",
+      "preview_theme": "Translucent Scrim"
+    },
+    {
+      "id": "HORIZONTAL",
+      "name": "Horizontal Header & Row",
+      "description": "Header lengkap dengan nama masjid & tanggal ganda, jam besar, dan baris 7 waktu salat horizontal di bawah.",
+      "tag": "Struktur Tradisional",
+      "preview_theme": "Row Layout"
+    },
+    {
+      "id": "VERTICAL",
+      "name": "Vertical Stack Split",
+      "description": "Layout kolom vertikal seimbang: panel kiri waktu salat memanjang, panel kanan slideshow konten dan jam.",
+      "tag": "Split Seimbang",
+      "preview_theme": "Vertical Split"
+    },
+    {
+      "id": "DIGITAL_CLOCK",
+      "name": "Giant Digital Clock",
+      "description": "Jam digital raksasa (HH:MM:SS) dengan countdown waktu salat berikutnya yang sangat menonjol untuk ruang luas.",
+      "tag": "Jam Raksasa",
+      "preview_theme": "Clock Dominant"
+    },
+    {
+      "id": "PRAYER_FOCUS",
+      "name": "Prayer Focus & Countdown",
+      "description": "Fokus dinamis pada nama salat yang akan datang ('MENUJU DZUHUR') lengkap dengan hitung mundur detik yang besar.",
+      "tag": "Fokus Salat",
+      "preview_theme": "Target Prayer Focus"
+    }
+  ],
+  "image_urls": [
+    {
+      "category": "hero_mosque_sunset",
+      "description": "Aerial view of illuminated mosque dome for TV display slide and background",
+      "url": "https://images.unsplash.com/photo-1537181534458-45dcee76ae90?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwyfHxtb3NxdWUlMjBhcmNoaXRlY3R1cmUlMjBzdW5zZXR8ZW58MHx8fHwxNzg5ODY4MjkxfDA&ixlib=rb-4.1.0&q=85"
+    },
+    {
+      "category": "grand_mosque_reflection",
+      "description": "Sheikh Zayed Grand Mosque reflection at sunset for cinematic background",
+      "url": "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwzfHxtb3NxdWUlMjBhcmNoaXRlY3R1cmUlMjBzdW5zZXR8ZW58MHx8fHwxNzg5ODY4MjkxfDA&ixlib=rb-4.1.0&q=85"
+    },
+    {
+      "category": "islamic_geometric_dome",
+      "description": "Intricate blue and gold geometric tile pattern ceiling for Islamic texture background",
+      "url": "https://images.unsplash.com/photo-1558114965-eeb97aa84c3b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwxfHxpbnRlcmlvciUyMG1vc3F1ZSUyMGdlb21ldHJpYyUyMGRvbWV8ZW58MHx8fHwxNzg5ODY4Mjk1fDA&ixlib=rb-4.1.0&q=85"
+    },
+    {
+      "category": "kaleido_dome_gold_blue",
+      "description": "Kaleidoscopic gold and turquoise dome art for Islamic pattern overlay",
+      "url": "https://images.unsplash.com/photo-1542414110-ae27fdb87ee1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwyfHxpbnRlcmlvciUyMG1vc3F1ZSUyMGdlb21ldHJpYyUyMGRvbWV8ZW58MHx8fHwxNzg5ODY4Mjk1fDA&ixlib=rb-4.1.0&q=85"
+    }
+  ],
+  "motion": {
+    "clock_tick": "Tabular numerals with monospace font to prevent visual jitter on second updates",
+    "prayer_countdown_pulse": "Subtle golden pulse effect when countdown is under 10 minutes",
+    "marquee_ticker": "Smooth CSS linear translate animation for running text with configurable speed (15s to 60s per loop)",
+    "slide_transition": "Gentle 1.2s cross-fade transition between mosque photos and info/donation slides",
+    "azan_iqamah_entrance": "Full viewport overlay with soft zoom and fade-in to alert congregation immediately without harsh flashing"
+  },
+  "accessibility": {
+    "contrast_ratio_minimum": "4.5:1 for all informational and time text",
+    "tv_viewing_distance": "High contrast gold-on-navy and white-on-dark-slate readable from 10-20 meters distance in prayer hall",
+    "wake_lock_integration": "Navigator.wakeLock API requested on /display mount to prevent TV screen sleep or screensaver engagement",
+    "data_testid_compliance": "All buttons, inputs, modal triggers, prayer time rows, and layout selectors must have kebab-case data-testid"
+  },
+  "admin_sidebar_menu_sections": [
+    {"path": "/admin", "label": "Dashboard", "icon": "LayoutDashboard"},
+    {"path": "/admin/masjid-profile", "label": "Masjid Profile", "icon": "Building2"},
+    {"path": "/admin/prayer-time", "label": "Prayer Time", "icon": "Clock"},
+    {"path": "/admin/layouts", "label": "Layout Style", "icon": "Palette"},
+    {"path": "/admin/localization", "label": "Localization", "icon": "Languages"},
+    {"path": "/admin/main-slider", "label": "Main Slider", "icon": "Images"},
+    {"path": "/admin/info-slide", "label": "Info Slide", "icon": "FileText"},
+    {"path": "/admin/donation-slide", "label": "Donation Slide", "icon": "QrCode"},
+    {"path": "/admin/islamic-event", "label": "Islamic Event", "icon": "CalendarDays"},
+    {"path": "/admin/running-text", "label": "Running Text", "icon": "MessageSquareText"},
+    {"path": "/admin/azan-screen", "label": "Azan Screen", "icon": "BellRing"},
+    {"path": "/admin/iqamah-screen", "label": "Iqamah Screen", "icon": "Timer"},
+    {"path": "/admin/scheduled-murattal", "label": "Scheduled Murattal", "icon": "Volume2"},
+    {"path": "/admin/masjid-web", "label": "Masjid Web", "icon": "Globe"},
+    {"path": "/admin/display-preview", "label": "Display Preview", "icon": "Tv"},
+    {"path": "/admin/settings", "label": "Settings", "icon": "Settings"}
+  ],
+  "instructions_to_main_agent": [
+    "1. Build the full-stack FastAPI backend + React Vite frontend in Bahasa Indonesia with MongoDB storage for all mosque settings, prayer times, layouts, slides, running texts, and events.",
+    "2. Implement the TV Display at `/display` as a true 16:9 full-screen kiosk (NO scroll, NO scrollbars, huge high-contrast fonts, real-time seconds ticking, Hijri+Gregorian date, WakeLock enabled).",
+    "3. Build the modular Layout Engine supporting all 8 distinct templates (SIGNATURE, ULTRA_WIDE, SIMPLICITY, CINEMATIC, HORIZONTAL, VERTICAL, DIGITAL_CLOCK, PRAYER_FOCUS) driven by the active layout config and live customizer.",
+    "4. Ensure SIGNATURE layout uses Royal Islamic Blue (#061325, #0B1D3A) with Gold/Amber Accents (#F59E0B, #F6BE3C) and emerald accents.",
+    "5. Build `/admin/layouts` as an interactive theme store catalog with 16:9 preview cards, '✓ ACTIVE' badge, 'Preview' modal, 'Use This Layout' button, and a customizable color/font/layout inspector with Live Preview, Save, and Reset.",
+    "6. Build all 16 Admin sections with full CRUD and rich sample Indonesian mosque data (e.g., Masjid Raya Al-Muhajirin Jakarta, DKM, Bank Syariah QRIS donation, Imsak/Subuh/Syuruq/Dzuhur/Ashar/Maghrib/Isya schedules, Islamic agenda).",
+    "7. Implement the prayer state machine: Regular Display → WAKTU AZAN (sound/animation) at prayer time → IQAMAH Countdown (countdown timer) → Regular Display."
+  ]
+}

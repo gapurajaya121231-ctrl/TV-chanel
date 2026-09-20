@@ -29,7 +29,7 @@ tanpa login; halaman TV kiosk 16:9 tanpa scroll dengan Wake Lock (layar tetap me
 - `info_slides`: slide_type (pengumuman|kajian|info|masjid), title, body, image_url, is_active, order
 - `donation` (singleton): title, text, qr_url, bank_name, account_number, account_name, is_active
 - `events`: title, date, time, description
-- `running_texts`: text, speed (detik/putaran), is_active, order
+- `running_texts`: text, speed (detik/putaran), size (persen ukuran tampil di TV, 60–200), is_active, order
 - `azan_settings` (singleton): enabled, message, duration_minutes, show_countdown
 - `iqamah_settings` (singleton): enabled, offsets {subuh..isya: menit}, message
 - `murattal`: title, start_time, duration_minutes, enabled

@@ -136,6 +136,7 @@ export interface RunningText {
   id: string;
   text: string;
   speed: number; // seconds per loop
+  size: number; // percent scale of this text on screen (60–200)
   is_active: boolean;
   order: number;
 }
@@ -143,6 +144,7 @@ export interface RunningText {
 export interface RunningTextCreate {
   text: string;
   speed?: number;
+  size?: number;
   is_active?: boolean;
 }
 

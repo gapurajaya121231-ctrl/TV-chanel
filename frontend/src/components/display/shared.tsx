@@ -282,23 +282,38 @@ export function ContentRotator({ data, cfg, className }: TvLayoutProps & { class
 export function RunningTextBar({ data, cfg }: { data: DisplayData; cfg: LayoutConfig }) {
   const active = data.running_texts.filter((t) => t.is_active);
   if (!data.settings.show_running_text || active.length === 0) return null;
-  const content = active.map((t) => t.text).join("      \u2022      ");
   const speed = Math.round(active.reduce((sum, t) => sum + Math.max(10, t.speed), 0) / active.length);
-  const sizeScale = Math.max(0.6, Math.min(2, cfg.running_text_size / 100)); // 60%–200%
-  const fontSize = `calc(${(1.5 * sizeScale).toFixed(2)}rem * var(--fs))`;
+  const layoutScale = Math.max(0.6, Math.min(2, cfg.running_text_size / 100)); // layout-wide scale
+  const sizeOf = (t: { size: number }) => {
+    const textScale = Math.max(0.6, Math.min(2, (t.size || 100) / 100)); // per-text scale
+    return `calc(${(1.5 * layoutScale * textScale).toFixed(3)}rem * var(--fs))`;
+  };
+  // Largest text drives the label + bar height so nothing is clipped.
+  const labelSize = `calc(${(1.5 * layoutScale * Math.max(...active.map((t) => Math.max(0.6, Math.min(2, (t.size || 100) / 100))))).toFixed(3)}rem * var(--fs))`;
+
+  const sequence = (
+    <>
+      {active.map((t) => (
+        <span key={t.id} className="px-10 font-medium" style={{ fontSize: sizeOf(t) }} data-testid={`tv-running-text-item-${t.id}`}>
+          {t.text}
+        </span>
+      ))}
+    </>
+  );
+
   return (
     <div className="flex shrink-0 items-stretch overflow-hidden" style={{ backgroundColor: hexToRgba(cfg.secondary_color, 0.96) }} data-testid="tv-running-text">
       <span
         className="flex shrink-0 items-center px-8 font-extrabold uppercase tracking-widest"
-        style={{ backgroundColor: cfg.accent_color, color: cfg.secondary_color, fontSize }}
+        style={{ backgroundColor: cfg.accent_color, color: cfg.secondary_color, fontSize: labelSize }}
         data-testid="tv-running-text-label"
       >
         Info
       </span>
       <div className="relative flex flex-1 items-center overflow-hidden">
-        <div className="animate-marquee flex w-max whitespace-nowrap" style={{ animationDuration: `${speed}s` }}>
-          <span className="px-10 font-medium" style={{ fontSize }} data-testid="tv-running-text-content">{content}</span>
-          <span className="px-10 font-medium" style={{ fontSize }}>{content}</span>
+        <div className="animate-marquee flex w-max items-center whitespace-nowrap" style={{ animationDuration: `${speed}s` }} data-testid="tv-running-text-content">
+          {sequence}
+          {sequence}
         </div>
       </div>
     </div>

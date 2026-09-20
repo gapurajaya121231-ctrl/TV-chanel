@@ -176,6 +176,7 @@ class RunningText(BaseModel):
     id: str = Field(default_factory=_uuid)
     text: str
     speed: int = 40
+    size: int = 100  # percent scale of this text on screen (60–200)
     is_active: bool = True
     order: int = 0
 
@@ -183,6 +184,7 @@ class RunningText(BaseModel):
 class RunningTextCreate(BaseModel):
     text: str
     speed: int = 40
+    size: int = 100
     is_active: bool = True
 
 

@@ -1,0 +1,140 @@
+#EXTM3U
+
+#EXTINF:-1 group-title="Lokal",TVN MOVIES (TRANS2)
+TVN_MOVIES_TRANS2
+#EXTINF:-1 group-title="Lokal",MDTV (TRANS2)
+MDTV_TRANS2
+#EXTINF:-1 group-title="Lokal",BIOSKOP INDONESIA (TRANS2)
+BIOSKOP_INDONESIA_TRANS2
+#EXTINF:-1 group-title="Lokal",JTV (TRANS2)
+JTV_TRANS2
+#EXTINF:-1 group-title="Lokal",MOJI (TRANS2)
+MOJI_TRANS2
+#EXTINF:-1 group-title="Lokal",NET..
+NET
+#EXTINF:-1 group-title="Lokal",KompasTV..
+KOMPASTV
+#EXTINF:-1 group-title="Lokal",BTV..
+BTV
+#EXTINF:-1 group-title="Lokal",Nusantara TV..
+NUSANTARA_TV
+#EXTINF:-1 group-title="Lokal",BANDUNG TV
+BANDUNG_TV
+#EXTINF:-1 group-title="Lokal",Jurnal TV
+JURNAL_TV
+#EXTINF:-1 group-title="Lokal",JITV Jogja
+JITV_JOGJA
+#EXTINF:-1 group-title="Lokal",TV Tabalong
+TV_TABALONG
+#EXTINF:-1 group-title="Lokal",RCTI (V+)
+https://d2xz2v5wuvgur6.cloudfront.net/out/v1/997ce8767b604fae9fce05379b3b8b3a/index.mpd
+#EXTINF:-1 group-title="Lokal",RCTI (R+)
+https://beetv.my.id/xstreamx/rctiplus.m3u8?ch=rcti
+#EXTINF:-1 group-title="Lokal",RCTI WORLD (V+)
+https://d3b0v7fggu5zwm.cloudfront.net/out/v1/ac934bd649dc47f699f793634de01635/index.mpd
+#EXTINF:-1 group-title="Lokal",MNCTV (V+)
+https://d2xz2v5wuvgur6.cloudfront.net/out/v1/d6b026ad50f14b7f9af5ddd5450007d4/index.mpd
+#EXTINF:-1 group-title="Lokal",MNCTV (R+)
+https://beetv.my.id/xstreamx/rctiplus.m3u8?ch=mnctv
+#EXTINF:-1 group-title="Lokal",MNCTV WORLD (V+)
+https://d2tjypxxy769fn.cloudfront.net/out/v1/52f468e951c14c6ba80d4d31c833fce6/index.mpd
+#EXTINF:-1 group-title="Lokal",GTV (V+)
+GTV_V_PLUS
+#EXTINF:-1 group-title="Lokal",INEWS (V+)
+INEWS_V_PLUS
+#EXTINF:-1 group-title="Lokal",TRANS TV (V+)
+TRANS_TV_V_PLUS
+#EXTINF:-1 group-title="Lokal",TRANS 7 (V+)
+TRANS_7_V_PLUS
+#EXTINF:-1 group-title="Lokal",SCTV (MAX)
+https://cdnbal1.indihometv.com/atm/DASH/sctv/sctv-avc1_2500000=7-3277707030000000.mpd
+#EXTINF:-1 group-title="Lokal",SCTV (VD)
+https://tvratu.my.id/nissa/index.mpd?id=204&type=dash
+#EXTINF:-1 group-title="Lokal",SCTV (inditv)
+https://cdnbal1.indihometv.com/atm/DASH/sctv/manifest.mpd
+#EXTINF:-1 group-title="Lokal",INDOSIAR (MAX)
+https://cdnbal1.indihometv.com/atm/DASH/indosiar/indosiar-avc1_2500000=7-3277707030000000.mpd
+#EXTINF:-1 group-title="Lokal",INDOSIAR (VDO)
+https://tvratu.my.id/nissa/index.mpd?id=205&type=dash
+#EXTINF:-1 group-title="Lokal",INDOSIAR (inditv)
+https://cdnbal1.indihometv.com/atm/DASH/indosiar/manifest.mpd
+#EXTINF:-1 group-title="Lokal",TVRI NASIONAL (DNS)
+https://op-flashcon-digdayahd-1.dens.tv/h/h17/index.m3u8?app_type=web&userid=lite&chname=TVRI
+#EXTINF:-1 group-title="Lokal",TVRI (VD)
+https://tvratu.my.id/vid/index.mpd?id=64418&type=drm
+#EXTINF:-1 group-title="Lokal",TVRI (intec)
+https://flv.intechmedia.net/live/ch113.m3u8|user-agent=Mozilla/5.0
+#EXTINF:-1 group-title="Lokal",TVONE (V+)
+https://d3b0v7fggu5zwm.cloudfront.net/out/v1/f3df48faafaf4198a65b9763140fce30/index.mpd
+#EXTINF:-1 group-title="Lokal",TvOne (inditv)
+https://cdnbal1.indihometv.com/atm/DASH/tvone/manifest.mpd
+#EXTINF:-1 group-title="Lokal",TV ONE (VD)
+https://tvratu.my.id/vid/index.mpd?id=7838&type=drm
+#EXTINF:-1 group-title="Lokal",TVone (intec)
+https://flv.intechmedia.net/live/ch109.m3u8|user-agent=Mozilla/5.0
+
+#EXTINF:-1 group-title="Olahraga",RTM SPORT
+RTM_SPORT
+#EXTINF:-1 group-title="Olahraga",ON GOLF
+ON_GOLF
+#EXTINF:-1 group-title="Olahraga",HTV Thể Thao
+HTV_THE_THAO
+#EXTINF:-1 group-title="Olahraga",TDM Sports
+TDM_SPORTS
+#EXTINF:-1 group-title="Olahraga",SPOTV2
+SPOTV2
+#EXTINF:-1 group-title="Olahraga",Eurosport HD
+EUROSPORT_HD
+#EXTINF:-1 group-title="Olahraga",SONY SPORTS TEN 3 Hindi HD
+SONY_SPORTS_TEN_3_HINDI_HD
+#EXTINF:-1 group-title="Olahraga",SONY SPORTS TEN 5 HD
+SONY_SPORTS_TEN_5_HD
+#EXTINF:-1 group-title="Olahraga",Star Sports 1 HD
+STAR_SPORTS_1_HD
+#EXTINF:-1 group-title="Olahraga",Star Sports Select 1 HD
+STAR_SPORTS_SELECT_1_HD
+
+#EXTINF:-1 group-title="Berita",SINDONEWS (V+)
+SINDONEWS_V_PLUS
+#EXTINF:-1 group-title="Berita",CNA (SGP)
+CNA_SGP
+#EXTINF:-1 group-title="Berita",PHOENIX INFONEWS
+PHOENIX_INFONEWS
+#EXTINF:-1 group-title="Berita",ALJAZEERA (VD)
+ALJAZEERA_VD
+#EXTINF:-1 group-title="Berita",DW ENGLISH (VD)
+DW_ENGLISH_VD
+#EXTINF:-1 group-title="Berita",EURONEWS (VD)
+EURONEWS_VD
+#EXTINF:-1 group-title="Berita",BBC News
+BBC_NEWS
+#EXTINF:-1 group-title="Berita",CNN News
+CNN_NEWS
+#EXTINF:-1 group-title="Berita",NHK World
+NHK_WORLD
+
+#EXTINF:-1 group-title="Film",HBO
+HBO
+#EXTINF:-1 group-title="Film",HBO Hits
+HBO_HITS
+#EXTINF:-1 group-title="Film",HBO Family
+HBO_FAMILY
+#EXTINF:-1 group-title="Film",HBO Signature
+HBO_SIGNATURE
+#EXTINF:-1 group-title="Film",Cinemax
+CINEMAX
+#EXTINF:-1 group-title="Film",TVN MOVIES (V+)
+TVN_MOVIES_V_PLUS
+#EXTINF:-1 group-title="Film",STUDIO UNIVERSAL (V+)
+STUDIO_UNIVERSAL_V_PLUS
+#EXTINF:-1 group-title="Film",ROCK ACTION (V+)
+ROCK_ACTION_V_PLUS
+#EXTINF:-1 group-title="Film",CELESTIAL MOVIES (V+)
+CELESTIAL_MOVIES_V_PLUS
+#EXTINF:-1 group-title="Film",THRILL (V+)
+THRILL_V_PLUS
+#EXTINF:-1 group-title="Film",HITS MOVIES (V+)
+HITS_MOVIES_V_PLUS
+#EXTINF:-1 group-title="Film",Saluran Drama Korea & Serial TV (Samsung Plus)
+https://d2yx6lvhcftzo5.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-3dcxhnnfoe8vt-prod/hls-harvester2-1293-prod/us-east-1/cc-3dcxhnnfoe8vt/master.m3u8?ads.device_did=%7BPSID%7D&ads.device_dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D
+

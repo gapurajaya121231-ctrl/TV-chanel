@@ -1,2 +1,0 @@
-# TV-chanel
-Tv bersama
